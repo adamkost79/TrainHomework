@@ -1,0 +1,46 @@
+body {
+  background-image: url("funktrain.jpeg");
+}
+
+h1 {
+  font-family: 'Monoton', cursive;
+}
+
+#header {
+  background-color: black;
+  text-align: center;
+  font-style: italic;
+  margin-top: 25px;
+  color: gold;
+}
+
+.table {
+  background-color: lightgray;
+  width: 800px;
+  margin-left: 150px;
+  border-radius: 10px;
+  font-family: 'Bungee', cursive;
+}
+
+.myTableBody {
+  background-color: white;
+  border-radius: 20px;
+}
+
+#bodyInputs {
+  width: 50%;
+  padding: 25px;
+  border-radius: 25px;
+  border-color: black;
+  margin-left: 150px;
+  font-family: 'Bungee', cursive;
+}
+
+placeholder {
+  color: gold;
+}
+
+#submitButton {
+  border-radius: 25px;
+  background-color: gold;
+}

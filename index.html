@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Train Schedule Homework</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="stye.css">
+  <link href="https://fonts.googleapis.com/css?family=Bungee|Monoton" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+
+<body>
+  <div class="jumbotron" id="header">
+    <h1>Get On That Train And Ride It</h1>
+    <div class="timeDate"></div>
+  </div>
+    <h3 id="timeDate"></h3>
+  <table class="table">
+    <thead class="thead-inverse">
+      <tr>
+        <th>Train Name </th>
+        <th>Destination</th>
+        <th>First Train <br> (Military Time)</th>
+        <th>Train Frequency <br> (Minutes)</th>
+        <th>Next Arrival Time</th>
+        <th>Minutes Until <br> Arrival</th>
+      </tr>
+    </thead>
+    <tbody class="myTableBody"></tbody>
+  </table>
+  <div class="jumbotron" id="bodyInputs">
+    <h3>Enter Train Information</h3>
+    <div class="form-group">
+      <label for="formGroupExampleInput">Train</label>
+      <input type="text" class="form-control" id="train-input" placeholder="Funk Train">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Destination</label>
+      <input type="text" class="form-control" id="destination-input" placeholder="Funky Town">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">First Train Time</label>
+      <input type="text" class="form-control" id="time-input" placeholder="HH:MM - Enter Military Time">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Frequency</label>
+      <input type="text" class="form-control" id="frequency-input" placeholder="Enter Minutes">
+    </div>
+    <br>
+    <div class="input-group-btn">
+      <button class="btn btn-default" id="submitButton" type="button" onclick="playSound()">Submit</button>
+      <audio id="play" src="rideit.mp3"></audio>
+    </div>
+  </div>
+
+  <script src="app2.js"></script>
+
+</body>
+
+</html>
